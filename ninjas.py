@@ -8,4 +8,8 @@ def index():
 @app.route('/ninjas')
 def ninjas():
     return render_template('ninjas.html')
+
+@app.route('/dojos/new')
+def dojosNew():
+    return render_template('dojos.html')
 app.run(debug=True)
